@@ -135,6 +135,7 @@ The user can manually click the `Data Table Setting` <sup>2</sup> item and check
 > Now, the user can use a new terminal to run each ROS node or command but don't forget to source the correct setup shell files as starting a new terminal.
 >
 > &#10146; <sup>1</sup>  The user can download the TM driver relative ROS apps [Experimental TM2 Foxy ROS Apps](https://github.com/TechmanRobotInc/tm2_ros2) of the GitHub repository for ROS applications.
+> **Note**: When you are finished, press CTRL + C in all terminal windows to shut everything down.<br/>
 <div> </div>
 
 ## __3. TMflow Vision node setup and prerequisites for using TM ROS Vision__
@@ -235,5 +236,6 @@ The user can manually click the `Data Table Setting` <sup>2</sup> item and check
 > ```
 >
 > Then, the viewer will display image data from _TMflow_.
+**Note**: When you are finished, press CTRL + C in all terminal windows to shut everything down.<br/>
 <div> </div>
 

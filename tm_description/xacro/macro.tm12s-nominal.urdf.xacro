@@ -51,12 +51,12 @@
     <xacro:property name="mass_6" value="0.720" />
 
     <xacro:property name="unit_factor" value="0.000001"/>
-    <xacro:property name="ixx_1" value="${25963.078*unit_factor}" /> 
+    <xacro:property name="ixx_1" value="${25963.078*unit_factor}" />
     <xacro:property name="ixx_2" value="${56178.979*unit_factor}" />
     <xacro:property name="ixx_3" value="${4694.5431*unit_factor}" />
-    <xacro:property name="ixx_4" value="${2046.0318*unit_factor}" />  
-    <xacro:property name="ixx_5" value="${2046.0318*unit_factor}" />   
-    <xacro:property name="ixx_6" value="${703.44734*unit_factor}" />  
+    <xacro:property name="ixx_4" value="${2046.0318*unit_factor}" />
+    <xacro:property name="ixx_5" value="${2046.0318*unit_factor}" />
+    <xacro:property name="ixx_6" value="${703.44734*unit_factor}" />
 
     <xacro:property name="iyy_1" value="${37671.229*unit_factor}" />
     <xacro:property name="iyy_2" value="${1212610.4*unit_factor}" />
