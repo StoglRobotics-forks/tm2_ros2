@@ -14,17 +14,22 @@ import xacro
 
 
 def generate_launch_description():
+    # Robot description Configuration
+    description_path = 'tm_description'
+    xacro_path = 'tm12s.urdf.xacro'
+    rviz_path = '/rviz/view_robot.rviz'     
+    
     robot_description_config = xacro.process_file(
         os.path.join(
-            get_package_share_directory('tm_description'),
+            get_package_share_directory(description_path),
             'xacro',
-            'tm12s.urdf.xacro',
+            xacro_path,
         )
     )
     robot_description = {'robot_description': robot_description_config.toxml()}
 
     # RViz
-    rviz_config_file = get_package_share_directory('tm_description') + '/rviz/view_robot.rviz'
+    rviz_config_file = get_package_share_directory(description_path) + rviz_path
     rviz_node = Node(
         package='rviz2',
         executable='rviz2',
@@ -52,10 +57,11 @@ def generate_launch_description():
         parameters=[robot_description]
     )
 
-    joint_state_publisher_node = Node(
+    # publish joint states
+    joint_state_slider = Node(
         package='joint_state_publisher_gui',
         executable='joint_state_publisher_gui',
         name='joint_state_publisher_gui'
     )
 
-    return LaunchDescription([static_tf, robot_state_publisher, joint_state_publisher_node, rviz_node])
+    return LaunchDescription([static_tf, robot_state_publisher, joint_state_slider, rviz_node])

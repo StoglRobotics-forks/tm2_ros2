@@ -55,6 +55,7 @@ This chapter describes a simplified GUI for displaying tm_driver connection stat
 ``export ROS_DOMAIN_ID=<ROS_DOMAIN_ID>``<br/>
 The <ROS_DOMAIN_ID> value of this setting must be the same as the value of TM Flow.<br/>
 ``ros2 run tm_inspect robot_ui``<br/>
+**Note**: When you are finished, press CTRL + C in all terminal windows to shut everything down.<br/>
 >
 For example: 
 >> Assume the domain ID is set to 30 and the embedded TM ROS driver is successfully enabled on _Tmflow 2_. If the user has successfully built the specific code (tm2_ros2) before, now the user only needs to open a new terminal, and set the path to the TM driver workspace ``cd ~/tm2_ws``, then type the following command to start the debug GUI.<br/>
