@@ -10,12 +10,12 @@
     joint_4_lower_limit:=${radians(-360)}    joint_4_upper_limit:=${radians(360)}
     joint_5_lower_limit:=${radians(-360)}    joint_5_upper_limit:=${radians(360)}
     joint_6_lower_limit:=${radians(-360)}    joint_6_upper_limit:=${radians(360)}
-    joint_1_velocity_limit:=${radians(240)}    
-    joint_2_velocity_limit:=${radians(240)}
-    joint_3_velocity_limit:=${radians(240)}    
-    joint_4_velocity_limit:=${radians(260)}
-    joint_5_velocity_limit:=${radians(260)}    
-    joint_6_velocity_limit:=${radians(520)}
+    joint_1_velocity_limit:=${radians(210)}    
+    joint_2_velocity_limit:=${radians(210)}
+    joint_3_velocity_limit:=${radians(210)}    
+    joint_4_velocity_limit:=${radians(225)}
+    joint_5_velocity_limit:=${radians(225)}    
+    joint_6_velocity_limit:=${radians(450)}
     joint_1_effort_limit:=${170}    
     joint_2_effort_limit:=${170}
     joint_3_effort_limit:=${170}    
@@ -55,7 +55,7 @@
     <xacro:property name="ixx_2" value="${28756.423*unit_factor}" />
     <xacro:property name="ixx_3" value="${4027.8840*unit_factor}" />
     <xacro:property name="ixx_4" value="${2046.0318*unit_factor}" />
-    <xacro:property name="ixx_5" value="${2046.0318*unit_factor}" /> 
+    <xacro:property name="ixx_5" value="${2046.0318*unit_factor}" />
     <xacro:property name="ixx_6" value="${703.44734*unit_factor}" />
 
     <xacro:property name="iyy_1" value="${13793.964*unit_factor}" />

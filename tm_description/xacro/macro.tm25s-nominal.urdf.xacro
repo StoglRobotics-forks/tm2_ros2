@@ -10,12 +10,12 @@
     joint_4_lower_limit:=${radians(-360)}    joint_4_upper_limit:=${radians(360)}
     joint_5_lower_limit:=${radians(-360)}    joint_5_upper_limit:=${radians(360)}
     joint_6_lower_limit:=${radians(-360)}    joint_6_upper_limit:=${radians(360)}
-    joint_1_velocity_limit:=${radians(150)}    
-    joint_2_velocity_limit:=${radians(150)}
-    joint_3_velocity_limit:=${radians(160)}    
-    joint_4_velocity_limit:=${radians(225)}
-    joint_5_velocity_limit:=${radians(240)}    
-    joint_6_velocity_limit:=${radians(255)}
+    joint_1_velocity_limit:=${radians(100)}    
+    joint_2_velocity_limit:=${radians(100)}
+    joint_3_velocity_limit:=${radians(130)}    
+    joint_4_velocity_limit:=${radians(195)}
+    joint_5_velocity_limit:=${radians(210)}    
+    joint_6_velocity_limit:=${radians(225)}
     joint_1_effort_limit:=${750}    
     joint_2_effort_limit:=${750}
     joint_3_effort_limit:=${350}    
