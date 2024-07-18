@@ -17,7 +17,7 @@ setup(
     maintainer='leowu',
     maintainer_email='leo.wu@tm-robot.com',
     description='tm_image',
-    license='BSD',
+    license='BSD-3-Clause',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
