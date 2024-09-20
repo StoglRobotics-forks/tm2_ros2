@@ -15,6 +15,7 @@
 >> **Note**: Domain ID is the key to ROS communication, and please make sure the ROS node works under the ROS environment setup with the same Domain ID as the robot.
 >
 > Now, the user can use the terminal to run the ROS node or command, but don't forget to export the correct <u>Domain ID</u> setup and source the correct setup shell files as starting a new terminal.
+> Note: When you finish executing your developed scripts or motion commands through the TM ROS driver connection, press CTRL + C in all terminal windows to shut everything down.
 
 ## &sect; Usage with MoveIt2-foxy (2.2.3)
 >
@@ -107,7 +108,7 @@
 >
 >> The parameter `<robot_ip_address>` means the IP address of the TM Robot.<br/>
 >
-> Note: When you are finished, press CTRL + C in all terminal windows to shut everything down.<br/>
+> Note: When you have finished, press CTRL + C in all terminal windows to shut everything down.<br/>
 > :bookmark_tabs: Note1: There are several built-in TM Robot nominal robot model settings, available for TM5S, TM7S, TM12S, TM14S, and TM25S models.<br/>
 > :bookmark_tabs: Note2: TM Robot set the default to read the Xacro file, such as _TM5S_ model, to read the file _tm5s.urdf.xacro_ into robot_description or such as _TM12S_ model, to read the file _tm12s.urdf.xacro_ into robot_description. If the user wants to use the specific model parameters instead of the nominal model to control the robot, please go back to the section __6. Generate your TM Robot-Specific Kinematics Parameters Files__ to modify the Xacro file.<br/>
 <div> </div>

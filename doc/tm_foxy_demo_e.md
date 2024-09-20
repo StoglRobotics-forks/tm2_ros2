@@ -105,6 +105,6 @@ For example:  (select to run demo_set_io)
 >> {workspace}$ source ./install/setup.bash
 >> {workspace}$ ros2 run demo demo_set_io
 >> ```
-**Note**: When you are finished, press CTRL + C in all terminal windows to shut everything down.<br/>
+**Note**: When you have finished, press CTRL + C in all terminal windows to shut everything down.<br/>
 <div> </div>
 
