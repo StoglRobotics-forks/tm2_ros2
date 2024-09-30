@@ -57,7 +57,7 @@ The <robot_ip_address> is the IP address of the TM Robot, the user can get it th
 > 6. In another new terminal: Source setup.bash in the workspace path and start GUI debug by typing<br/>
 ``source ./install/setup.bash``<br/>
 ``ros2 run tm_inspect robot_ui``<br/>
-**Note**: When you are finished, press CTRL + C in all terminal windows to shut everything down.<br/>
+**Note**: When you have finished, press CTRL + C in all terminal windows to shut everything down.<br/>
 >
 >
 <br/>

@@ -96,6 +96,6 @@ The <robot_ip_address> is the IP address of the TM Robot, the user can get it th
 ``source ./install/setup.bash``<br/>
 ``ros2 run demo demo_set_io``<br/>
 > :warning:[CAUTION] Some demos will let the TM Robot move, please be careful.<br/>
-**Note**: When you are finished, press CTRL + C in all terminal windows to shut everything down.<br/>
+**Note**: When you have finished, press CTRL + C in all terminal windows to shut everything down.<br/>
 <div> </div>
 

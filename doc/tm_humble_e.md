@@ -206,8 +206,8 @@ The __Listen node__: a socket server can be established and be connected with RO
 >
 >> **Note**: The <ROS_DOMAIN_ID> is the key to ROS communication and must be the same as the value of _TM Flow 2_ in the _ROS Settings_.<br/>
 >
-> Then, the viewer will display image data from _TMflow_.
-**Note**: When you are finished, press CTRL + C in all terminal windows to shut everything down.<br/>
+> Then, the viewer will display image data from _TMflow_.<br/>
+> **Note**: When you have finished, press CTRL + C in all terminal windows to shut everything down.<br/>
 <div> </div>
 
 ## __4. ROS Settings on Configuration__ 
