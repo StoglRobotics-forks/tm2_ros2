@@ -52,7 +52,7 @@ def generate_launch_description():
     moveit_config_path = 'tm12s_moveit_config'    
     srdf_path = 'config/tm12s.srdf'
     rviz_path = '/rviz/moveit.rviz'
-    controller_path = 'config/moveit_controllers.yaml'
+    controller_path = 'config/moveit2_controllers.yaml'
     joint_limits_path = 'config/joint_limits.yaml'
 
     # MoveIt Configuration
@@ -65,8 +65,6 @@ def generate_launch_description():
         .to_moveit_configs()
     )
 
-    # moveit_config.moveit_cpp.update({"use_sim_time": use_sim_time.perform(context) == "true"})
-
     # Start the actual move_group node/action server
     run_move_group_node = Node(
         package='moveit_ros_move_group',
@@ -74,9 +72,7 @@ def generate_launch_description():
         output='screen',
         parameters=[
             moveit_config.to_dict(),
-            {
-                "use_sim_time": True,
-            },
+            {'use_sim_time': True},
         ],
     )
 
@@ -93,9 +89,10 @@ def generate_launch_description():
         parameters=[
             moveit_config.robot_description,
             moveit_config.robot_description_semantic,
-            moveit_config.robot_description_kinematics,
             moveit_config.planning_pipelines,
-            # moveit_config.joint_limits,
+            moveit_config.robot_description_kinematics,            
+            moveit_config.joint_limits,
+            {'use_sim_time': True},
         ],
     )
 
@@ -129,14 +126,12 @@ def generate_launch_description():
     ros2_control_node = Node(
         package='controller_manager',
         executable='ros2_control_node',
-        parameters=[moveit_config.robot_description, ros2_controllers_path],
+        parameters=[ros2_controllers_path],
+        remappings=[
+            ('/controller_manager/robot_description', '/robot_description'),
+        ],
         output='both',
     )
-
-    controller_manager = Node(
-        package="controller_manager",
-        executable="ros2_control_node",
-    ) 
 
     joint_state_broadcaster_spawner = Node(
         package='controller_manager',
@@ -153,7 +148,7 @@ def generate_launch_description():
         executable="spawner",
         arguments=[
             'tmr_arm_controller', 
-            '-c', 
+            '--controller-manager',
             '/controller_manager',
         ],
     )

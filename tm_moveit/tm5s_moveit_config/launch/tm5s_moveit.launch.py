@@ -1,5 +1,5 @@
 ############################################################################################### 
-#  tm25s_moveit.launch.py
+#  tm5s_moveit.launch.py
 #   
 #  Various portions of the code are based on original source from 
 #  The reference: "https://github.com/moveit/moveit2/tree/main/moveit_ros/moveit_servo/launch"
@@ -46,11 +46,11 @@ def generate_launch_description():
             i = i + 1
 
     # Configure robot_description
-    tm_robot_type = 'tm25s'
+    tm_robot_type = 'tm5s'
     description_path = 'tm_description'
-    xacro_path = 'config/tm25s.urdf.xacro'
-    moveit_config_path = 'tm25s_moveit_config'    
-    srdf_path = 'config/tm25s.srdf'
+    xacro_path = 'config/tm5s.urdf.xacro'
+    moveit_config_path = 'tm5s_moveit_config'    
+    srdf_path = 'config/tm5s.srdf'
     rviz_path = '/rviz/moveit.rviz'
     controller_path = 'config/moveit2_controllers.yaml'
     joint_limits_path = 'config/joint_limits.yaml'
