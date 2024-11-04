@@ -59,7 +59,6 @@
 > source ./install/setup.bash
 > ```
 >
-> The demo launches the RViz GUI and demonstrates planning and execution of a simple collision-free motion plan with TM Robot.<br/> 
 > :bulb: Do you prepare the __TM Robot__ ready ? Make sure that TM Robot's operating software (__TMflow__) network settings are ready and the __Listen node__ is running.<br/>
 >
 > * To bring up the MoveIt2 - MoveGroup demo in simulation mode with the virtual TM Robot, by typing<br/>
