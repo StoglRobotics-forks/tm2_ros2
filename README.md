@@ -131,7 +131,6 @@ This chapter describes that the user can use a script program to extract specifi
 The user can use MoveIt to control the TM robot in the motion planning to plan paths or run the TM Robot simulation into your scene description for operations such as _collision checking_ or _obstacle avoidance_.
 See [MoveIt2 tutorial](https://moveit.ros.org/install-moveit2/source/) to install the MoveIt2 packages.<br/>
 - External TM ROS Driver [Usage Guideline](./doc/tm_foxy_extension.md)
-- Embedded TM ROS Driver [Usage Guideline](./doc/tm_foxy_extension_e.md)
 <div> </div>
 
 ## __8. Contact us / Technical support__
